@@ -3,6 +3,8 @@ import random
 colors = ["black", "blue", "green", "pink", "yellow"]
 
 class Dot:
+    """The Enemy of the game"""
+
     def __init__(self):
         super().__init__()
         
@@ -15,6 +17,8 @@ class Dot:
         self.move()
 
     def move(self):
+        """Moves the Enemy to a random location and changes the color"""
+
         for color in colors:
             random_color = random.choice(colors)
 
